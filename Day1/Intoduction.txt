@@ -1,0 +1,1 @@
+Develop an intelligent inventory management system that forecasts future stock demand using past sales data and automatically restocks items when quantities fall below threshold levels.
