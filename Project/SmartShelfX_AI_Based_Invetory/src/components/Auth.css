@@ -1,0 +1,96 @@
+/* Common container styles */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f3f4f6;
+  font-family: Arial, sans-serif;
+}
+
+/* Auth card box */
+.auth-box {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 360px;
+}
+
+.auth-box h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-box label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.auth-box input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.auth-box input:focus {
+  border-color: #007bff;
+}
+
+.auth-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s;
+}
+
+.auth-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Forgot password + footer links */
+.auth-links {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.auth-links a {
+  font-size: 13px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-links a:hover {
+  text-decoration: underline;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.auth-footer .link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-footer .link:hover {
+  text-decoration: underline;
+}
