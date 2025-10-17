@@ -12,7 +12,7 @@ export default function SignIn() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // ✅ REPLACE your old handleSubmit with this one:
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
 

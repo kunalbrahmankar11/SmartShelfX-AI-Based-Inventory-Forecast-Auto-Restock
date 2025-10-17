@@ -14,7 +14,7 @@ export default function SignUp() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // ✅ REPLACE YOUR OLD handleSubmit WITH THIS ONE:
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
