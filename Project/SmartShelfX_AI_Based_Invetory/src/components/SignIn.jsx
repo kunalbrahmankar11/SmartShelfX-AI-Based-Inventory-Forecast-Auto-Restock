@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Auth.css";
 
 export default function SignIn() {
@@ -8,11 +8,12 @@ export default function SignIn() {
     password: "",
   });
 
+  const navigate = useNavigate(); // 👈 for redirection
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
- 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -27,9 +28,15 @@ export default function SignIn() {
       });
 
       const message = await response.text();
-      alert(message);
+
+      if (response.ok) {
+        alert("Login successful!");
+        navigate("/home"); // 👈 redirect to Home page
+      } else {
+        alert(message); // show error from backend
+      }
     } catch (error) {
-      console.error("Error during sign-in:", error);
+      console.error("Error during sign in:", error);
       alert("Something went wrong. Please try again.");
     }
   };
@@ -59,15 +66,10 @@ export default function SignIn() {
             required
           />
 
-          <div className="auth-links">
-            <a href="#">Forgot Password?</a>
-          </div>
-
           <button type="submit" className="auth-btn">Sign In</button>
 
-          <p className="auth-footer">
-            Don’t have an account?{" "}
-            <Link to="/signup" className="link">Sign Up</Link>
+          <p>
+            Don’t have an account? <Link to="/signup">Sign Up</Link>
           </p>
         </form>
       </div>
