@@ -8,6 +8,7 @@ export default function SignUp() {
     password: "",
     confirmPassword: "",
     dob: "",
+    
   });
 
   const handleChange = (e) => {

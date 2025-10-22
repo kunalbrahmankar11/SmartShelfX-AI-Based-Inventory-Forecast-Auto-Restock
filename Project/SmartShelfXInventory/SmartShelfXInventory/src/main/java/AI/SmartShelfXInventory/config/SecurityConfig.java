@@ -9,15 +9,15 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .cors()  // enable CORS
-                .and()
-                .csrf().disable() // disable CSRF for APIs
+                .csrf(csrf -> csrf.disable()) // disable CSRF for simplicity
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/auth/**").permitAll() // allow signup/login without auth
+                        .requestMatchers("/api/**").permitAll() // allow all your APIs
                         .anyRequest().authenticated()
-                );
+                )
+                .cors(cors -> {}); // enable CORS
+
         return http.build();
     }
 }
