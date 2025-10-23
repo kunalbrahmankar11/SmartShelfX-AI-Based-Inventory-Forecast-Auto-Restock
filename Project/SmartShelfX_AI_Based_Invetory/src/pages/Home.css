@@ -1,32 +1,71 @@
-.home-container {
-  text-align: center;
-  padding: 50px;
-  background-color: #f9f9f9;
-  height: 100vh;
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* space between brand/logo and links */
+  align-items: center;
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  flex-wrap: wrap; /* makes it responsive */
 }
 
-h1 {
-  color: #333;
+/* Logo or brand */
+.navbar .brand {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-p {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 40px;
+/* Navbar links container */
+.navbar .nav-links {
+  display: flex;
+  gap: 15px; /* space between buttons */
+  flex-wrap: wrap;
 }
 
-.button-group button {
-  margin: 10px;
-  padding: 12px 25px;
+/* Navbar buttons/links */
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #45a049;
+}
+
+/* Responsive: stack links on smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar .nav-links a {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+
+.back-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
   font-size: 16px;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: #4CAF50;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.button-group button:hover {
+.back-btn:hover {
   background-color: #45a049;
 }
+

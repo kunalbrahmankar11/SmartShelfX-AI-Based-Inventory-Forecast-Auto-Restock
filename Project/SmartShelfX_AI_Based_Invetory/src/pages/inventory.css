@@ -1,67 +1,93 @@
 .inventory-container {
-  width: 90%;
-  margin: 40px auto;
+  padding: 40px;
   text-align: center;
+  background-color: #f5f5f5;
+  min-height: 100vh;
 }
 
 .inventory-form {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .inventory-form input,
 .inventory-form select {
+  margin: 10px;
   padding: 10px;
-  font-size: 16px;
-  border-radius: 6px;
+  width: 220px;
+  border-radius: 8px;
   border: 1px solid #ccc;
 }
 
 .inventory-form button {
   padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
+  background-color: #007bff;
   border: none;
-  border-radius: 6px;
+  color: white;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 .inventory-form button:hover {
-  background-color: #45a049;
+  background-color: #0056b3;
 }
 
 .inventory-table {
   width: 100%;
   border-collapse: collapse;
+  background: white;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .inventory-table th,
 .inventory-table td {
-  padding: 12px;
   border: 1px solid #ddd;
+  padding: 12px;
 }
 
 .inventory-table th {
-  background-color: #f2f2f2;
+  background-color: #007bff;
+  color: white;
 }
 
-.inventory-table button {
-  margin: 5px;
-  padding: 6px 12px;
+.edit-btn {
+  background-color: #ffc107;
+  color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-right: 8px;
   cursor: pointer;
 }
 
-.inventory-table button:first-child {
-  background-color: #2196f3;
-  color: white;
+.edit-btn:hover {
+  background-color: #e0a800;
 }
 
-.inventory-table button:last-child {
-  background-color: #f44336;
+.delete-btn {
+  background-color: #dc3545;
   color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.back-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: #218838;
 }
