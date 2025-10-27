@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Invetory.css";
+import "./Inventry.css";
 
 export default function Inventory() {
   const [projects, setProjects] = useState([]);
