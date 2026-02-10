@@ -1,0 +1,153 @@
+/* 🌐 General Layout */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+/* 🧭 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #1b5e20, #43a047);
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -5px;
+  background: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #c8e6c9;
+}
+
+/* 🏠 Home Content */
+.home-container {
+  text-align: center;
+  margin-top: 80px;
+  animation: fadeIn 1s ease;
+}
+
+.home-container h1 {
+  font-size: 2.4rem;
+  color: #2e7d32;
+  font-weight: 700;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* 📊 Dashboard Cards */
+.dashboard-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 60px auto;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 5px solid #2e7d32;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  color: #1b5e20;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* 🎨 Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .dashboard-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

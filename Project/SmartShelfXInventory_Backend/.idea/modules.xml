@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SmartShelfXInventory/SmartShelfXInventory.iml" filepath="$PROJECT_DIR$/SmartShelfXInventory/SmartShelfXInventory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SmartShelfXInventory_Backend.iml" filepath="$PROJECT_DIR$/.idea/SmartShelfXInventory_Backend.iml" />
+    </modules>
+  </component>
+</project>

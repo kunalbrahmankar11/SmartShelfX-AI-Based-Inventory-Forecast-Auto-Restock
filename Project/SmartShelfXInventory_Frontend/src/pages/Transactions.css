@@ -1,0 +1,48 @@
+.transaction-container {
+  padding: 30px;
+  text-align: center;
+  overflow: visible;
+}
+
+.transaction-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.transaction-form input,
+.transaction-form select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.transaction-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.transaction-form button:hover {
+  background-color: #45a049;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.transaction-table th {
+  background-color: #f0f0f0;
+}
